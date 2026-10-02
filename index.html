@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102b4e"><title>Jelajah Iman kepada Kitab Allah</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">✦</span><span>PAI <small>MEDIA INTERAKTIF</small></span></div>
+  <div class="top-title">Jelajah Iman kepada Kitab-Kitab Allah</div>
+  <button class="sound" id="soundBtn" aria-label="Aktifkan suara">♫ <span>Suara</span></button>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">PENDIDIKAN AGAMA ISLAM · SMP</p>
+      <h1>Mengenal Kitab Allah,<br><em>Menguatkan Iman</em></h1>
+      <p class="lead">Belajar, jelajahi, dan uji pemahamanmu tentang kitab-kitab Allah dengan cara yang menyenangkan.</p>
+      <button class="primary" data-go="materi">Mulai belajar <span>→</span></button>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="book">▤<span>۞</span></div><div class="spark s1">✦</div><div class="spark s2">✧</div></div>
+  </section>
+  <nav class="tabs" aria-label="Navigasi pembelajaran">
+    <button class="tab active" data-panel="materi">01 <span>Materi</span></button>
+    <button class="tab" data-panel="jelajah">02 <span>Jelajah Kitab</span></button>
+    <button class="tab" data-panel="aktivitas">03 <span>Aktivitas</span></button>
+    <button class="tab" data-panel="kuis">04 <span>Kuis</span></button>
+    <button class="tab" data-panel="refleksi">05 <span>Refleksi</span></button>
+  </nav>
+  <section class="panel active" id="materi">
+    <div class="section-head"><div><p class="eyebrow">01 / PEMAHAMAN DASAR</p><h2>Apa arti iman kepada kitab Allah?</h2></div><span class="pill">Materi inti</span></div>
+    <div class="content-grid">
+      <article class="info-card"><div class="icon">📖</div><h3>Pengertian</h3><p>Iman kepada kitab-kitab Allah berarti meyakini dengan sepenuh hati bahwa Allah Swt. menurunkan kitab-kitab sebagai petunjuk bagi manusia melalui rasul-rasul-Nya.</p></article>
+      <article class="info-card"><div class="icon">🎯</div><h3>Tujuan diturunkannya</h3><p>Menjadi pedoman hidup, membimbing manusia menuju kebenaran, menjelaskan perintah dan larangan Allah, serta menjadi petunjuk agar manusia memperoleh kebahagiaan dunia dan akhirat.</p></article>
+      <article class="info-card"><div class="icon">💡</div><h3>Perilaku orang beriman</h3><p>Membaca dan mempelajari Al-Qur’an, mengamalkan ajarannya, menghormati kitab-kitab Allah, serta menjadikan wahyu sebagai pedoman dalam bersikap.</p></article>
+    </div>
+    <div class="callout"><span>✦</span><div><b>Ingat!</b><p>Kitab-kitab Allah yang wajib diketahui: Taurat, Zabur, Injil, dan Al-Qur’an. Al-Qur’an diturunkan kepada Nabi Muhammad saw. sebagai kitab terakhir dan penyempurna kitab-kitab sebelumnya.</p></div></div>
+  </section>
+  <section class="panel" id="jelajah">
+    <div class="section-head"><div><p class="eyebrow">02 / KENALI LEBIH DEKAT</p><h2>Empat kitab, empat kisah</h2><p class="sub">Pilih kartu untuk melihat informasi kitab.</p></div></div>
+    <div class="book-grid">
+      <button class="book-card selected" data-book="taurat"><span class="book-symbol gold">✧</span><b>Taurat</b><small>Nabi Musa a.s.</small><span class="card-hint">Ketuk untuk mengenal →</span></button>
+      <button class="book-card" data-book="zabur"><span class="book-symbol blue">♫</span><b>Zabur</b><small>Nabi Dawud a.s.</small><span class="card-hint">Ketuk untuk mengenal →</span></button>
+      <button class="book-card" data-book="injil"><span class="book-symbol coral">❋</span><b>Injil</b><small>Nabi Isa a.s.</small><span class="card-hint">Ketuk untuk mengenal →</span></button>
+      <button class="book-card" data-book="quran"><span class="book-symbol green">۞</span><b>Al-Qur’an</b><small>Nabi Muhammad saw.</small><span class="card-hint">Ketuk untuk mengenal →</span></button>
+    </div>
+    <div class="detail-card" id="bookDetail" aria-live="polite"><div class="detail-icon">✧</div><div><p class="eyebrow">KITAB ALLAH</p><h3>Taurat</h3><p>Diturunkan kepada Nabi Musa a.s. sebagai petunjuk bagi Bani Israil. Taurat memuat ajaran dan hukum yang menjadi pedoman pada masa itu.</p><div class="detail-meta">Penerima wahyu: <b>Nabi Musa a.s.</b></div></div></div>
+  </section>
+  <section class="panel" id="aktivitas">
+    <div class="section-head"><div><p class="eyebrow">03 / BELAJAR SAMBIL BERMAIN</p><h2>Pasangkan kitab dan rasul</h2><p class="sub">Pilih satu kitab, lalu pilih rasul yang tepat.</p></div><span class="pill" id="matchStatus">0 dari 4 benar</span></div>
+    <div class="match-layout"><div><h3 class="match-label">Pilih kitab</h3><div class="choice-list" id="bookChoices">
+      <button class="choice" data-match="injil">Injil</button><button class="choice" data-match="quran">Al-Qur’an</button><button class="choice" data-match="taurat">Taurat</button><button class="choice" data-match="zabur">Zabur</button>
+    </div></div><div><h3 class="match-label">Pilih rasul</h3><div class="choice-list" id="prophetChoices">
+      <button class="choice" data-prophet="dawud">Nabi Dawud a.s.</button><button class="choice" data-prophet="muhammad">Nabi Muhammad saw.</button><button class="choice" data-prophet="musa">Nabi Musa a.s.</button><button class="choice" data-prophet="isa">Nabi Isa a.s.</button>
+    </div></div></div><p class="feedback" id="matchFeedback" aria-live="polite">Ayo mulai memasangkan!</p><button class="secondary" id="resetMatch">Ulangi aktivitas ↻</button>
+  </section>
+  <section class="panel" id="kuis">
+    <div class="section-head"><div><p class="eyebrow">04 / UJI PEMAHAMAN</p><h2>Kuis cepat</h2><p class="sub">Jawab pertanyaan berikut. Pilih satu jawaban yang paling tepat.</p></div><span class="pill" id="quizCount">Soal 1 dari 5</span></div>
+    <div class="quiz-card"><div class="progress"><span id="progressBar"></span></div><h3 id="question">Kitab Taurat diturunkan kepada nabi siapa?</h3><div class="answers" id="answers"></div><p class="feedback" id="quizFeedback" aria-live="polite"></p><div class="quiz-bottom"><span id="scoreLabel">Skor: 0</span><button class="primary" id="nextQuestion" disabled>Berikutnya →</button></div></div>
+  </section>
+  <section class="panel" id="refleksi">
+    <div class="section-head"><div><p class="eyebrow">05 / RENUNGKAN</p><h2>Iman yang terlihat dalam tindakan</h2></div></div>
+    <div class="reflection"><div class="reflection-art">☼</div><div><h3>Setelah belajar, pikirkan...</h3><p>Bagaimana cara kamu menunjukkan kecintaan kepada Al-Qur’an dalam kehidupan sehari-hari?</p><textarea id="reflectionText" placeholder="Tuliskan refleksimu di sini..." rows="4"></textarea><button class="primary" id="saveReflection">Simpan refleksi</button><p class="feedback" id="reflectionFeedback" aria-live="polite"></p></div></div>
+    <div class="closing"><b>Pesan pembelajaran</b><p>“Kitab Allah bukan hanya untuk diketahui, tetapi juga untuk dipelajari dan diamalkan.”</p></div>
+  </section>
+</main>
+<footer><span>PAI SMP · Iman kepada Kitab-Kitab Allah</span><span>Belajar aktif • Berpikir kritis • Berakhlak mulia</span></footer>
+<script src="script.js"></script>
+</body></html>
